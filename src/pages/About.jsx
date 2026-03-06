@@ -29,7 +29,7 @@ const About = () => {
             </div>
 
             {/* Brand Story */}
-            <section className="py-24">
+            <section className="py-16 md:py-24">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-lg leading-relaxed text-brand-cream/80 space-y-8">
                     <motion.p
                         initial={{ opacity: 0, y: 20 }}
@@ -51,9 +51,9 @@ const About = () => {
             </section>
 
             {/* Mission & Craftsmanship */}
-            <section className="py-24 bg-[#050505] border-y border-brand-brown/20">
+            <section className="py-16 md:py-24 bg-[#050505] border-y border-brand-brown/20">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
                         <motion.div
                             initial={{ opacity: 0, x: -30 }}
                             whileInView={{ opacity: 1, x: 0 }}

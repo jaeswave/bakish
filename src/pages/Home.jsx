@@ -29,7 +29,7 @@ const Home = () => {
                 </div>
 
                 {/* Hero Content */}
-                <div className="relative z-10 text-center px-4 max-w-4xl mx-auto mt-20">
+                <div className="relative z-10 text-center px-4 max-w-4xl mx-auto mt-16 md:mt-20">
                     <motion.span
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -67,7 +67,7 @@ const Home = () => {
             </section>
 
             {/* Featured Outfits */}
-            <section className="py-24 bg-[#0a0a0a] border-t border-brand-brown/10">
+            <section className="py-16 md:py-24 bg-[#0a0a0a] border-t border-brand-brown/10">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
                         <span className="text-brand-gold uppercase tracking-[0.2em] text-sm font-semibold mb-2 block">Curated Pieces</span>
@@ -75,7 +75,7 @@ const Home = () => {
                         <div className="w-24 h-1 bg-brand-gold mx-auto mt-6"></div>
                     </div>
 
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
                         {featuredProducts.map((product, index) => (
                             <motion.div
                                 key={product.id}
@@ -98,9 +98,9 @@ const Home = () => {
             </section>
 
             {/* About Preview Section */}
-            <section className="py-24 bg-[#050505]">
+            <section className="py-16 md:py-24 bg-[#050505]">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16 items-center">
                         <motion.div
                             initial={{ opacity: 0, x: -50 }}
                             whileInView={{ opacity: 1, x: 0 }}
@@ -143,7 +143,7 @@ const Home = () => {
             </section>
 
             {/* Testimonials */}
-            <section className="py-24 bg-brand-black relative overflow-hidden">
+            <section className="py-16 md:py-24 bg-brand-black relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-64 h-64 bg-brand-gold/5 rounded-full blur-3xl"></div>
                 <div className="absolute bottom-0 left-0 w-96 h-96 bg-brand-gold/5 rounded-full blur-3xl"></div>
 
@@ -153,7 +153,7 @@ const Home = () => {
                         <div className="w-24 h-1 bg-brand-gold mx-auto mt-6"></div>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
                         {[
                             {
                                 text: "The craftsmanship is unparalleled. I wore my custom Agbada for my wedding and felt like absolute royalty. The fit was perfect.",

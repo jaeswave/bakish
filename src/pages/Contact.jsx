@@ -17,7 +17,7 @@ const Contact = () => {
     return (
         <div className="pt-24 min-h-screen bg-brand-black pb-24">
             {/* Header */}
-            <div className="py-16 text-center border-b border-brand-brown/20 px-4">
+            <div className="py-12 md:py-16 text-center border-b border-brand-brown/20 px-4">
                 <motion.h1
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -35,8 +35,8 @@ const Contact = () => {
                 </motion.p>
             </div>
 
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-16">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 md:mt-16">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16">
 
                     {/* Contact Info container */}
                     <motion.div
