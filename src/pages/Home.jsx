@@ -19,19 +19,21 @@ const Home = () => {
             {/* Hero Section */}
             <section className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
                 {/* Background Image */}
-                <div className="absolute inset-0 z-0">
+                <div className="absolute inset-0 z-0 bg-black">
                     <img
-                        src="/images/agbada.png"
-                        alt="Nigerian man wearing Agbada"
+                        src="/images/patterned_shirt.png"
+                        alt="Hero Model"
                         className="w-full h-full object-cover object-top"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/80 to-transparent"></div>
+
+                    {/* Dark gradient overlay for text readability only at bottom */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/60 to-transparent pointer-events-none"></div>
                 </div>
 
                 {/* Hero Content */}
                 <div className="relative z-10 text-center px-4 max-w-4xl mx-auto mt-16 md:mt-20">
                     <motion.span
-                        initial={{ opacity: 0, y: 20 }}
+                        initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8 }}
                         className="text-brand-gold uppercase tracking-[0.3em] text-sm md:text-base font-semibold block mb-4"
@@ -39,23 +41,23 @@ const Home = () => {
                         Premium Native Fashion
                     </motion.span>
                     <motion.h1
-                        initial={{ opacity: 0, y: 20 }}
+                        initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 0.2 }}
-                        className="text-5xl md:text-7xl lg:text-8xl mb-6 tracking-tight text-white drop-shadow-lg"
+                        className="text-4xl md:text-6xl lg:text-8xl mb-6 tracking-tight text-white drop-shadow-2xl"
                     >
                         Redefining Native <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-gold to-yellow-600 font-style-italic">Elegance</span>
                     </motion.h1>
                     <motion.p
-                        initial={{ opacity: 0, y: 20 }}
+                        initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 0.4 }}
-                        className="text-brand-cream/80 text-lg md:text-xl md:max-w-2xl mx-auto mb-10 leading-relaxed font-light"
+                        className="text-brand-cream/90 text-lg md:text-xl md:max-w-2xl mx-auto mb-10 leading-relaxed font-light drop-shadow-md"
                     >
                         Experience the fusion of royal heritage and modern craftsmanship. Tailored exclusively for the confident African man.
                     </motion.p>
                     <motion.div
-                        initial={{ opacity: 0, y: 20 }}
+                        initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 0.6 }}
                     >

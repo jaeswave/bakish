@@ -27,7 +27,7 @@ const ProductCard = ({ product }) => {
             <div className="p-4 md:p-6 flex flex-col flex-grow">
                 <div className="flex justify-between items-start mb-2 gap-2">
                     <h3 className="font-serif text-lg md:text-xl text-white group-hover:text-brand-gold transition-colors leading-tight">{product.name}</h3>
-                    <span className="text-brand-gold font-medium text-sm md:text-base whitespace-nowrap">{product.price}</span>
+                    <span className="text-brand-gold font-medium text-sm md:text-base whitespace-nowrap">Contact for Price</span>
                 </div>
                 <p className="text-brand-cream/60 text-xs md:text-sm mb-4 line-clamp-2">{product.description}</p>
                 <div className="mt-auto pt-2 flex items-center justify-between border-t border-brand-brown/10 lg:border-none lg:pt-0">
